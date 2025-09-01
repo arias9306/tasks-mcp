@@ -16,3 +16,12 @@ Add the following configuration to your MCP config file to run the Tasks Manager
     ]
 }
 ```
+
+```json
+"tasks-manager": {
+    "command": "node",
+    "args": [
+    "{path}/tasks-mcp/dist/index.js"
+    ]
+}
+```

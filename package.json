@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && chmod 755 dist/index.js",
+    "inspector": "pnpm build && npx -y @modelcontextprotocol/inspector node dist/index.js",
+    "inspector-ts": "npx -y @modelcontextprotocol/inspector npx -y tsx src/index.ts"
   },
   "keywords": [],
   "author": "",
